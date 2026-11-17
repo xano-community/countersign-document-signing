@@ -1,0 +1,1336 @@
+{
+  "version": 1,
+  "objects": {
+    "app:Authentication": {
+      "guid": "418bb3d99f5c721ab78c30d97d651e90",
+      "canonical": "authn",
+      "canonical_source": "code",
+      "guid_source": "code"
+    },
+    "app:Chatbot": {
+      "guid": "d38a9e1caf83cf798a8883cbb0e83b99",
+      "canonical": "chat",
+      "canonical_source": "code"
+    },
+    "app:MCP OAuth": {
+      "guid": "c28ec38f91b73b91d20ba717a4ef256c",
+      "canonical": "mcp-oauth-countersign",
+      "canonical_source": "code"
+    },
+    "app:agent": {
+      "guid": "8fe6c1adc68a153ab4b46550a7faf4b3",
+      "canonical": "agent",
+      "canonical_source": "code"
+    },
+    "app:api": {
+      "guid": "97f0711bb56c294a5e5eb163854b1b15",
+      "canonical": "api",
+      "canonical_source": "code"
+    },
+    "app:app": {
+      "guid": "9cfec81047ef194e6f8525859a73c4e2",
+      "canonical": "app",
+      "canonical_source": "code"
+    },
+    "app:approvals": {
+      "guid": "e78457b07ab49187cf3102d207f40454",
+      "canonical": "approvals",
+      "canonical_source": "code"
+    },
+    "app:developer": {
+      "guid": "f3172f150b16056d0a03fbc0bcba9a2c",
+      "canonical": "developer",
+      "canonical_source": "code"
+    },
+    "app:documents": {
+      "guid": "5502a5ff34d55d9e7b9930dc519f9c3d",
+      "canonical": "documents",
+      "canonical_source": "code"
+    },
+    "app:email": {
+      "guid": "c32153cccaabce6bf5efbe733e46c13b",
+      "canonical": "email",
+      "canonical_source": "code"
+    },
+    "app:email_hooks": {
+      "guid": "aff81635e144a64f8ba47ca1f789125a",
+      "canonical": "email_hooks",
+      "canonical_source": "code"
+    },
+    "app:envelopes": {
+      "guid": "525e8119a406ae4420a5bf521cdea45c",
+      "canonical": "envelopes",
+      "canonical_source": "code"
+    },
+    "app:final": {
+      "guid": "cdd59b18a41a3772f88fc3c2439f3b29",
+      "canonical": "final",
+      "canonical_source": "code"
+    },
+    "app:org": {
+      "guid": "5c199b78b43a57dfb5602d0c6aa4ff33",
+      "canonical": "org",
+      "canonical_source": "code"
+    },
+    "app:public": {
+      "guid": "e1699ba35d88c267882922d5813b33b4",
+      "canonical": "public",
+      "canonical_source": "code"
+    },
+    "app:rbac": {
+      "guid": "e229bc569c09d4eee6b5d86b87faf61a",
+      "canonical": "rbac",
+      "canonical_source": "code"
+    },
+    "app:seal": {
+      "guid": "daa2c1dd5763ded66af3176f20134e18",
+      "canonical": "seal",
+      "canonical_source": "code"
+    },
+    "app:sign": {
+      "guid": "0253a23c9c2223b012b71f74a0d4c662",
+      "canonical": "sign",
+      "canonical_source": "code"
+    },
+    "app:signing": {
+      "guid": "3edc3a26d41b69d00c40a26bcfb51abc",
+      "canonical": "signing",
+      "canonical_source": "code"
+    },
+    "app:templates": {
+      "guid": "a103aa3b0e488c8e246ac28444a1e719",
+      "canonical": "templates",
+      "canonical_source": "code"
+    },
+    "app:verify": {
+      "guid": "1a8166a4dd5a75c19da0f9d3043c9807",
+      "canonical": "verify",
+      "canonical_source": "code"
+    },
+    "channel:live|app": {
+      "guid": "4ee152ab7c9319f847d302a24a3dcfdd"
+    },
+    "channel:live|rooms/{room}": {
+      "guid": "fd8a835249ae79c78f5f83e833e6a283"
+    },
+    "channel:live|users/{user_id}": {
+      "guid": "5a8be675f38a010d734f93811db619ec"
+    },
+    "dbo:access_link": {
+      "guid": "428c3b2913309fe6992de3caa9690dec"
+    },
+    "dbo:account": {
+      "guid": "f2f78af06c7c59b550823db5edae97bc",
+      "guid_source": "code"
+    },
+    "dbo:activity": {
+      "guid": "40742ffb4f73931a841ced17dc05c22b"
+    },
+    "dbo:agent_activity": {
+      "guid": "ddf573d30230681458ecc3ce1b622148"
+    },
+    "dbo:agent_connection": {
+      "guid": "6bb36e51fa851cc92dca37383ac2e082"
+    },
+    "dbo:api_key": {
+      "guid": "8b168a10becc96c69c420ba063319dcf"
+    },
+    "dbo:api_key_use": {
+      "guid": "8bb1b3ac34071043a217b0efa259cef9"
+    },
+    "dbo:approval": {
+      "guid": "f139daa26901db948305de7008aca3b0"
+    },
+    "dbo:audit_event": {
+      "guid": "9008f2c423b2cd2fb90dd139b29ce433"
+    },
+    "dbo:bulk_send": {
+      "guid": "44a943c1c4357bf3feb4853a107643b7"
+    },
+    "dbo:bulk_send_row": {
+      "guid": "c5abd7a67c4ccdad626420900d02b80c"
+    },
+    "dbo:conversation": {
+      "guid": "82dcb96c2b194384d632c35b67d6bd52"
+    },
+    "dbo:conversation_message": {
+      "guid": "9212556e48dcdde206e1f564d3de8eb3"
+    },
+    "dbo:demo_persona": {
+      "guid": "5214cb34a1a30ecfb614ff09d270340e"
+    },
+    "dbo:disclosure": {
+      "guid": "d95d86159a522d7efd5133be35c878c3"
+    },
+    "dbo:document_blob": {
+      "guid": "99030dc2c578e3742c0e6de5becaa542"
+    },
+    "dbo:document_file": {
+      "guid": "99b9205756070f90d68a891739d03c74"
+    },
+    "dbo:email_outbox": {
+      "guid": "59aa40c32dd5c31bba0ca255c306b4b4"
+    },
+    "dbo:envelope": {
+      "guid": "aa1dbd48c82a40fa3f8c06481f7c23e7"
+    },
+    "dbo:event_log": {
+      "guid": "e9148697952846994def7eb0a467d6cd",
+      "guid_source": "code"
+    },
+    "dbo:field": {
+      "guid": "ff1d7eb0b290f391f3b4431678c61642"
+    },
+    "dbo:notification": {
+      "guid": "82aa02f0fec38d41c31e06e20dbbc94b"
+    },
+    "dbo:org_setting": {
+      "guid": "c4aeeb4e3dc2d97cdfebbb029ccfdfb0"
+    },
+    "dbo:otp_code": {
+      "guid": "3d3e37d52257259673ea49daf1081413"
+    },
+    "dbo:public_link": {
+      "guid": "40f9f572ae14449597c36680f80ddb70"
+    },
+    "dbo:purged_envelope": {
+      "guid": "06655a9863798ba06d567b77883269ff"
+    },
+    "dbo:rate_bucket": {
+      "guid": "622204acdebc0d26b7b62417fbe21864"
+    },
+    "dbo:recipient": {
+      "guid": "0183c3393dde05e3395995a61528332a"
+    },
+    "dbo:role_change": {
+      "guid": "be3f462b365b59b14ab9c8c851fb4fe1"
+    },
+    "dbo:signature": {
+      "guid": "556e4f580946ff152178c4bb03dcf760"
+    },
+    "dbo:signing_link": {
+      "guid": "39d889617d7a30cac956c43bbc05ff23"
+    },
+    "dbo:user": {
+      "guid": "efb558104909137dac95907814c26051",
+      "guid_source": "code"
+    },
+    "dbo:vendor": {
+      "guid": "bfb63c64f297d03a3c67e77289d3fe5b"
+    },
+    "dbo:webhook_delivery": {
+      "guid": "8c56a823b976091f24cc5f7f31dcb4d4"
+    },
+    "dbo:webhook_endpoint": {
+      "guid": "b7a6c65185a8f45357d98624bc46b134"
+    },
+    "dbo:workspace_setting": {
+      "guid": "c12607c3844188c2e248aad264abdd47"
+    },
+    "function:Getting Started Template/create_event_log": {
+      "guid": "19bb274c20b194d7fa03ca4bafb3ac4c",
+      "guid_source": "code"
+    },
+    "function:agent/check_key": {
+      "guid": "05d8edd2bb5af96810184e6a60ef6cd1"
+    },
+    "function:agent/connect": {
+      "guid": "97a45c913f83af24b914074135377557"
+    },
+    "function:agent/revoke": {
+      "guid": "12b8f05147d4f16122aa088255d26b82"
+    },
+    "function:agent/sign_in_connection": {
+      "guid": "429315c57b863c0686fbfee1fbda5582"
+    },
+    "function:api_key/create": {
+      "guid": "37545468a42847fdd54c156831cc1fe4"
+    },
+    "function:api_key/list": {
+      "guid": "8bea3eec89b97e97420720c4e193b8e6"
+    },
+    "function:api_key/resolve": {
+      "guid": "f1c869266b553c5b497f9a4e64f970c7"
+    },
+    "function:api_key/revoke": {
+      "guid": "c578d32e12c8af6850dc0c0e36edb702"
+    },
+    "function:app/changed": {
+      "guid": "31990c91200aa3794b2890548916f07b"
+    },
+    "function:app/notify": {
+      "guid": "a6b4f44eaa2c407c288548684186f917"
+    },
+    "function:app/notify_roles": {
+      "guid": "f3bf9a0680d403d6370684d01db9fb60"
+    },
+    "function:app/remember_urls": {
+      "guid": "7d677c7405b33a7924119fa0f672e15a"
+    },
+    "function:approvals/apply_edit": {
+      "guid": "31e1f6ecb958cf60694ff0750037d9fe"
+    },
+    "function:approvals/decide": {
+      "guid": "f0ebceefae0c19d33c76748ff68ac46f"
+    },
+    "function:approvals/request": {
+      "guid": "e9a99c0259ffd2ebcc9f190070ce8195"
+    },
+    "function:audit/append": {
+      "guid": "5725b8979b67987945459d206f8691ad"
+    },
+    "function:audit/verify": {
+      "guid": "35c86b244bff9fc88efe06f852ba24a0"
+    },
+    "function:bulk/cancel": {
+      "guid": "da12f1e69b19fa57f827aa2ca6814050"
+    },
+    "function:bulk/create": {
+      "guid": "07f8c55c7aa129d7098cf15dc9e43a0f"
+    },
+    "function:bulk/detail": {
+      "guid": "588f00d67e13d6deb94bdad6e894533e"
+    },
+    "function:bulk/step": {
+      "guid": "7a89409c720b65ba58a86552ecc5e788"
+    },
+    "function:chatbot/generate_reply": {
+      "guid": "dd355b0c0de054e837cf0fbdbb7eeea8"
+    },
+    "function:demo/build_world": {
+      "guid": "3c3fc53b59357edd18d45d77cf9d22e3"
+    },
+    "function:demo/signer_link": {
+      "guid": "23a8065bcf99ce09ff149c3c4a51a1e5"
+    },
+    "function:documents/check": {
+      "guid": "eb26e1f17d9082d494bff894d3d8a4d0"
+    },
+    "function:documents/clean_name": {
+      "guid": "045a47b5a36c1efdaa502845a3963dec"
+    },
+    "function:documents/discard": {
+      "guid": "2d05f258dc680fae41ac0ea06321814a"
+    },
+    "function:documents/original_bytes": {
+      "guid": "ebecf1c264cb551dc94829189800b772"
+    },
+    "function:documents/original_link": {
+      "guid": "c882dc51c77fbe1c1e314445a30dcb76"
+    },
+    "function:documents/storage": {
+      "guid": "638915be44874f99a0fb128dffddcb8e"
+    },
+    "function:documents/store": {
+      "guid": "2a9939c1605de1360177101e32021517"
+    },
+    "function:email/apply_event": {
+      "guid": "79481d706dee6a81ad6b9c51d00b2cbd"
+    },
+    "function:email/claim": {
+      "guid": "afc442e93f0b20fe5891a446112bc14a"
+    },
+    "function:email/drain": {
+      "guid": "3d63253b73824863ff81a9c5e77f587a"
+    },
+    "function:email/enqueue": {
+      "guid": "13cea314bbbf107959e0fe2cf94a892b"
+    },
+    "function:email/layout": {
+      "guid": "6a6ff6dd152e0ca100feb64abbca6566"
+    },
+    "function:email/mark_stuck": {
+      "guid": "0e4b3e28f8a146e0f4361e0e1eb6850a"
+    },
+    "function:email/render": {
+      "guid": "4cdd3678f52093b3654dbf75ce1abee1"
+    },
+    "function:email/send_one": {
+      "guid": "ba5549742cc3f99bb96ebdda2e7b1459"
+    },
+    "function:email/send_test": {
+      "guid": "44af041881273855594b957339e8b959"
+    },
+    "function:email/status": {
+      "guid": "9284f6e2516e54a31b3a70c5aa34e3aa"
+    },
+    "function:email/svix_verify": {
+      "guid": "2714f3045181e9a5878b7fba64b3f1ad"
+    },
+    "function:envelope/advance": {
+      "guid": "3b140ed7b7ec650958638f9d04263699"
+    },
+    "function:envelope/can_read": {
+      "guid": "ddbac6b1c9ffe15ffad27e005ed05a6b"
+    },
+    "function:envelope/copy_download": {
+      "guid": "3ce72d759bbe38f158d2e50ff805c473"
+    },
+    "function:envelope/copy_link": {
+      "guid": "a8a1cfbd3029c42d84a7276db0e39783"
+    },
+    "function:envelope/correct": {
+      "guid": "e7ceb777ec740d3836db60a0d6e53bc4"
+    },
+    "function:envelope/create": {
+      "guid": "0a45660d6e4015fab036eecaee91a00e"
+    },
+    "function:envelope/detail": {
+      "guid": "e101fbf8944315f0faaf7ab641c3a4f2"
+    },
+    "function:envelope/due_expiries": {
+      "guid": "ec7dc956bcdabaf76bb901b9c3672d21"
+    },
+    "function:envelope/due_reminders": {
+      "guid": "fa534818755f40ca97f734d7522ae839"
+    },
+    "function:envelope/erase": {
+      "guid": "0e4cfebccc6f9d3384cbc6ca10dd34d1"
+    },
+    "function:envelope/extend": {
+      "guid": "403fd6b14994b7c6723728890b9a79b7"
+    },
+    "function:envelope/host": {
+      "guid": "2048d4893f3e3120e7ec827ce9fe4ea6"
+    },
+    "function:envelope/list": {
+      "guid": "59dd0ab55f7592780dffc8d03b7f2930"
+    },
+    "function:envelope/prepare_view": {
+      "guid": "79490a7dac2855fa7d06f99b00d635c1"
+    },
+    "function:envelope/remind": {
+      "guid": "dbe9cadd28a4d3342e718b4bfd131dde"
+    },
+    "function:envelope/remind_one": {
+      "guid": "0e7012da1592e0b704390df83bd38450"
+    },
+    "function:envelope/save_fields": {
+      "guid": "6d72059d0b9688e2ca1aa8e13bb38b24"
+    },
+    "function:envelope/save_recipients": {
+      "guid": "4dcf9ff9bf57cd55814708d207bf48ec"
+    },
+    "function:envelope/send": {
+      "guid": "de94af9250a99a93fb11f03ca538535f"
+    },
+    "function:envelope/send_problems": {
+      "guid": "72a5914e0f2ea5f651c11002a66cb6fc"
+    },
+    "function:envelope/sign_as_me": {
+      "guid": "f7d16b7a9c8c13b18d78f57f85214860"
+    },
+    "function:envelope/stats": {
+      "guid": "fa077c55187d8f52500a935eacfa9d30"
+    },
+    "function:envelope/transition": {
+      "guid": "fe63fe7b424e448cb3c957a584b9fd75"
+    },
+    "function:envelope/update_draft": {
+      "guid": "81839c22458eba754c57e6b5b33d19a8"
+    },
+    "function:envelope/void": {
+      "guid": "258529ba5c46946d7f39a43a204a849f"
+    },
+    "function:members/remove": {
+      "guid": "42a87c4fb6145a4db42483d689d7cc0e"
+    },
+    "function:public/brief": {
+      "guid": "be1dea7793520ff047a623799a9820cf"
+    },
+    "function:public/start": {
+      "guid": "0c1dd2fb5aa2e2087b58f1295476c8a7"
+    },
+    "function:public/verify": {
+      "guid": "0733465c199787d2c27ff34096cb16d6"
+    },
+    "function:rate/hit": {
+      "guid": "d37ace72c23185c3b54cb009a3de8504"
+    },
+    "function:rbac/permissions": {
+      "guid": "72dad0994c746b4ea289c8ca81718074"
+    },
+    "function:rbac/set_role": {
+      "guid": "6409af4a083aa634acf5d9928cecbb2b"
+    },
+    "function:recipient/transition": {
+      "guid": "af02244e552d4e31fb7384db8af60936"
+    },
+    "function:seal/audit_pdf": {
+      "guid": "99d58c51f3fb11e43951bbff6189d183"
+    },
+    "function:seal/build": {
+      "guid": "9922ea07e78171457c91bb3ed24e1840"
+    },
+    "function:seal/due": {
+      "guid": "1620ec72e1c0bbcce6f23612a1b4b96d"
+    },
+    "function:seal/fail": {
+      "guid": "5dae0e3b69b05a825d0dea26bdf277a9"
+    },
+    "function:seal/final_for_token": {
+      "guid": "420b027bdc972095ecb03a9913304fa5"
+    },
+    "function:seal/member_audit_pdf": {
+      "guid": "3b79a2aa32491229e1c7edc04b78082a"
+    },
+    "function:seal/member_final": {
+      "guid": "0ce49116f61a446807ee3ad9498da6ab"
+    },
+    "function:seal/member_zip": {
+      "guid": "cb14073104606de3009fb29e45a269f2"
+    },
+    "function:seal/original": {
+      "guid": "c194f82b4c45113069281879a740d052"
+    },
+    "function:seal/retry": {
+      "guid": "92cfb875cd4102ec45f4ad81d8bd76e4"
+    },
+    "function:seal/signing_info": {
+      "guid": "f0116832390e80ae31eb7f1769b47a3c"
+    },
+    "function:seal/store_final": {
+      "guid": "a1d5c3255f166a64f7290f0ff342e504"
+    },
+    "function:seal/verify": {
+      "guid": "8534c62bafa54e86c09ad8b44de17a8e"
+    },
+    "function:settings/clear_demo": {
+      "guid": "9cc4b22db2b9977f9ed7fe332e5e7781"
+    },
+    "function:settings/disclosure": {
+      "guid": "43f413efde8629ec7a5fff77732f00b1"
+    },
+    "function:settings/export": {
+      "guid": "d8d93f5743dc9d7fc1964fcb40375ae2"
+    },
+    "function:settings/purge_due": {
+      "guid": "d8313bed3d726d77ac1bcfedcb0293b9"
+    },
+    "function:settings/read": {
+      "guid": "553909b2070cab6b86590d65e04a09e0"
+    },
+    "function:settings/update": {
+      "guid": "5c81b5b15978c8d93a2b46b3b85480ff"
+    },
+    "function:signing/adopt": {
+      "guid": "0de099a6b92a7dda553eedeac7297f06"
+    },
+    "function:signing/consent": {
+      "guid": "984038e859e70e5b97cf6a71a5cc48a9"
+    },
+    "function:signing/decline": {
+      "guid": "80bff8d03ea1089f9e077d29eedacfc9"
+    },
+    "function:signing/fill": {
+      "guid": "9ae626aa3703ee905d1195263d2a1200"
+    },
+    "function:signing/finish": {
+      "guid": "8b64c6f8ef021a44767c1d0cc6f4f375"
+    },
+    "function:signing/mint_download": {
+      "guid": "777398cba3503f53917bb09b556e6bb2"
+    },
+    "function:signing/mint_link": {
+      "guid": "a35620e3686bb8f6cbfdfa523e5bf2b1"
+    },
+    "function:signing/mint_otp": {
+      "guid": "14470652c4348b98654ce6fe99fc11d8"
+    },
+    "function:signing/open": {
+      "guid": "9a687ef8a5db340d9eef6092b26b7082"
+    },
+    "function:signing/revoke_links": {
+      "guid": "2ed07e2493974c6af3adda76d6629955"
+    },
+    "function:signing/send_code": {
+      "guid": "d0c0a1242b0040940ee748c599cc4948"
+    },
+    "function:signing/state": {
+      "guid": "1a6610dda51b2fe30e1f912472e10bb8"
+    },
+    "function:signing/verify_identity": {
+      "guid": "f14d379b93931a65b42a53be92b0b793"
+    },
+    "function:template/delete": {
+      "guid": "0fb4e05dd31289618fb39b6052aa3944"
+    },
+    "function:template/instantiate": {
+      "guid": "baa22b88002ec86db036c013aaedf993"
+    },
+    "function:template/list": {
+      "guid": "9026f1d5fb63ec447e21465a1ac0f462"
+    },
+    "function:template/public_link": {
+      "guid": "e54fcb231805692b3bb4c70aecb2a5b6"
+    },
+    "function:template/public_problems": {
+      "guid": "dcaaa240e2bcdea0cdec22eaf1db040f"
+    },
+    "function:template/save_from": {
+      "guid": "d470e910324311d769d07bc3ed43dc23"
+    },
+    "function:template/use": {
+      "guid": "97fa42032a00013ac24e486f6692649c"
+    },
+    "function:test/vendor_pdf_lib": {
+      "guid": "4ec6ebb04feb4836a9d1e937591fbde6"
+    },
+    "function:test/vendor_seal": {
+      "guid": "67e39f8e9a160a6e24940e45eca52b73"
+    },
+    "function:webhook/add": {
+      "guid": "5ddf5a8f793f43674ff0590d80756eca"
+    },
+    "function:webhook/deliver": {
+      "guid": "c5e08b58bef77a9e31b025d122959e12"
+    },
+    "function:webhook/deliver_due": {
+      "guid": "ab8732d1b73df4e9ff64f13200f4c447"
+    },
+    "function:webhook/enqueue": {
+      "guid": "4b0b733316674951e43c1f9575ce5c8a"
+    },
+    "function:webhook/list": {
+      "guid": "ba73baf109773628a4460359e8e67ac5"
+    },
+    "function:webhook/ping": {
+      "guid": "a2d3cdfc1ee1d6d392f7f0b55a4f4698"
+    },
+    "function:webhook/redeliver": {
+      "guid": "0d3011a29b77bdcf9dfb39f812a1b8f1"
+    },
+    "function:webhook/update": {
+      "guid": "d322e9009f527cfaa94d06fd63d18718"
+    },
+    "middleware:members/gate_active": {
+      "guid": "1ece908978a161571441ca5d3364a3a3"
+    },
+    "middleware:signing/gate": {
+      "guid": "6e9ac490e5898fc3403bace69d2e4c66"
+    },
+    "query:Authentication|GET|auth/demo/personas": {
+      "guid": "b83e7c6953156d71f59acffa05dc79d2"
+    },
+    "query:Authentication|GET|auth/invites": {
+      "guid": "1009cee1fcfd5f1fb8899807398f6665"
+    },
+    "query:Authentication|GET|auth/me": {
+      "guid": "8e64176a70b122ffed0ce68ceed6b9ce",
+      "guid_source": "code"
+    },
+    "query:Authentication|PATCH|auth/me": {
+      "guid": "e07bb43e93fb31e03505b6200a89df24"
+    },
+    "query:Authentication|POST|auth/demo": {
+      "guid": "57d4713073de44a5850be77ca2037d16"
+    },
+    "query:Authentication|POST|auth/invites": {
+      "guid": "200f98a8cc06cb814b3be6372e8a4cb1"
+    },
+    "query:Authentication|POST|auth/invites/{id}/revoke": {
+      "guid": "88465458bb33b13e92c39221ebe9dd71"
+    },
+    "query:Authentication|POST|auth/link": {
+      "guid": "73a0ac4e597dd8af5527efd6fea738a5"
+    },
+    "query:Authentication|POST|auth/link/accept": {
+      "guid": "edcdf8905fda0a855258976733594e61"
+    },
+    "query:Authentication|POST|auth/login": {
+      "guid": "35b7bbd1552626fbc8b7b6c1115c70df",
+      "guid_source": "code"
+    },
+    "query:Authentication|POST|auth/me/password": {
+      "guid": "8e9e49eec9d4d6a886c5c90202fc9009"
+    },
+    "query:Authentication|POST|auth/people/{id}/reset-link": {
+      "guid": "553340983f0c224529b93de4c94a1c2d"
+    },
+    "query:Authentication|POST|auth/signup": {
+      "guid": "ad508f9d25b77a54e415db5c45d0d8d0",
+      "guid_source": "code"
+    },
+    "query:Chatbot|DELETE|chat/conversations/{conversation_id}": {
+      "guid": "7c36dd95cd835b1e074c13e88dfb366f"
+    },
+    "query:Chatbot|GET|chat/conversations": {
+      "guid": "462d80d3951173d82fd6af65d2d66226"
+    },
+    "query:Chatbot|GET|chat/conversations/{conversation_id}/messages": {
+      "guid": "3b6c9a03e5e4d27ed093c48d631012f3"
+    },
+    "query:Chatbot|POST|chat/conversations/create": {
+      "guid": "07552b101f5c7504c601f071300e1d96"
+    },
+    "query:Chatbot|POST|chat/conversations/{conversation_id}/send": {
+      "guid": "6a62546cc13071290f173fe1a1bcd5e4"
+    },
+    "query:MCP OAuth|GET|mcp_oauth/login": {
+      "guid": "aecd78c1c9daacdbd415ade01e6fd77f"
+    },
+    "query:MCP OAuth|GET|mcp_oauth/request": {
+      "guid": "2e2afa6bf73758db462243703f5c49b8"
+    },
+    "query:MCP OAuth|POST|mcp_oauth/complete": {
+      "guid": "c73632038f52023bd3e4c802e46f3967"
+    },
+    "query:MCP OAuth|POST|mcp_oauth/sign_in": {
+      "guid": "95965a156cc0e36b35e016145ebb75fe"
+    },
+    "query:agent|GET|agent/activity": {
+      "guid": "9a8e1604eb608d23d1830387749c9fe5"
+    },
+    "query:agent|GET|agent/connections": {
+      "guid": "b9c7bc064f0710a08e0874fb29a61e12"
+    },
+    "query:agent|GET|agent/info": {
+      "guid": "bc0adfcd34661f63a9e872cf5d198d84"
+    },
+    "query:agent|POST|agent/connections": {
+      "guid": "867a0a082e530f2e65e108c2470f1bfd"
+    },
+    "query:agent|POST|agent/connections/{id}/revoke": {
+      "guid": "77323117ebfbe57ce8655ae586ab5693"
+    },
+    "query:api|GET|v1/envelopes": {
+      "guid": "85e12fef53f83e6373cf8e79e2d0c6f0"
+    },
+    "query:api|GET|v1/envelopes/{id}": {
+      "guid": "b744c6ba94731bfe91550d980a82dd65"
+    },
+    "query:api|GET|v1/envelopes/{id}/signed_pdf": {
+      "guid": "113aedde220ff166dd5cf239864dbd30"
+    },
+    "query:api|GET|v1/templates": {
+      "guid": "d2a81bddcc5578dd532d6125dac06e37"
+    },
+    "query:api|POST|v1/envelopes/{id}/remind": {
+      "guid": "7587ff6fb9d6a8d47a02b7f1f707b0aa"
+    },
+    "query:api|POST|v1/envelopes/{id}/void": {
+      "guid": "4d0fabb1c5f2e4307a75d8acefb15813"
+    },
+    "query:api|POST|v1/templates/{id}/send": {
+      "guid": "3f79d63dc8cf000d491be533590cb9dc"
+    },
+    "query:approvals|GET|approvals": {
+      "guid": "fd589bb359d6f89f15bc9267c1c0a127"
+    },
+    "query:approvals|POST|approvals/{id}/approve": {
+      "guid": "c73e10362e162138c316ebb3ead5ed99"
+    },
+    "query:approvals|POST|approvals/{id}/decline": {
+      "guid": "3e77b035a152ba08663b226305ecf0dd"
+    },
+    "query:app|GET|app/activity": {
+      "guid": "0e39ee592793d3bb4db8ac37d8384f32"
+    },
+    "query:app|GET|app/notifications": {
+      "guid": "e842bbc5ba048bfdd0d380ca588ae653"
+    },
+    "query:app|GET|app/notifications/unread": {
+      "guid": "fa022888475637435c6f3b6932cc2e78"
+    },
+    "query:app|GET|app/people": {
+      "guid": "625b976644075dd90ecfc1e334d2f6b3"
+    },
+    "query:app|GET|app/settings": {
+      "guid": "b9809e38250fbfa90155bc604eb2db63"
+    },
+    "query:app|PATCH|app/settings": {
+      "guid": "29068de8520304ab536a922150685605"
+    },
+    "query:app|POST|app/notifications/read-all": {
+      "guid": "74c0c7d2364fb765f170d1b56f0f4336"
+    },
+    "query:app|POST|app/notifications/{id}/read": {
+      "guid": "6893f09eb5bc2a69aed3c29019611582"
+    },
+    "query:developer|GET|developer/keys": {
+      "guid": "d3e932b4a2d4741947b997b66d93daf6"
+    },
+    "query:developer|GET|developer/webhooks": {
+      "guid": "295e5e11e79769420fb3f0be74bd96d7"
+    },
+    "query:developer|PATCH|developer/webhooks/{id}": {
+      "guid": "93aa4c9f5ec9e3d7cd85f0f4d07645c2"
+    },
+    "query:developer|POST|developer/deliveries/{id}/resend": {
+      "guid": "99809a8ce989ce6fdb53a10f8be24030"
+    },
+    "query:developer|POST|developer/keys": {
+      "guid": "64b08a5bb26a4bccdb2aa6e8040410e2"
+    },
+    "query:developer|POST|developer/keys/{id}/revoke": {
+      "guid": "4407ca7ecd40800a7bb36d82862dc37e"
+    },
+    "query:developer|POST|developer/webhooks": {
+      "guid": "19757e1cd496c1419ed044298e757d73"
+    },
+    "query:developer|POST|developer/webhooks/{id}/ping": {
+      "guid": "304382ba5bd8a8a7562a45895b23d35a"
+    },
+    "query:documents|GET|document-storage": {
+      "guid": "c7ab51a640d34a3849103a313831f323"
+    },
+    "query:documents|GET|envelopes/{id}/audit-trail": {
+      "guid": "2e51107c67261fec2ba5a4bae11897fd"
+    },
+    "query:documents|GET|envelopes/{id}/bundle": {
+      "guid": "c5daa3c0aa91e5c728ca9e36042a6cd4"
+    },
+    "query:documents|GET|envelopes/{id}/final": {
+      "guid": "d706bca4d35c1070ac5286bc7f18acb5"
+    },
+    "query:documents|GET|envelopes/{id}/final/raw": {
+      "guid": "76123ed7c9a7c0d57aff091ae6e6de32"
+    },
+    "query:documents|GET|envelopes/{id}/original": {
+      "guid": "b0b0c6076a1cb42bcd9db2f28bcb90bb"
+    },
+    "query:documents|GET|envelopes/{id}/original/raw": {
+      "guid": "2afca25694ae872a2ae103c208971897"
+    },
+    "query:documents|POST|envelopes": {
+      "guid": "c89efa5e699aa9d35143153fede6f8e8"
+    },
+    "query:documents|POST|envelopes/{id}/seal/retry": {
+      "guid": "a5b9c59ea803a9e332ab4e3a6c6a2f46"
+    },
+    "query:email_hooks|POST|resend": {
+      "guid": "f6eccc098c1199ea23ffa583529115e9"
+    },
+    "query:email|GET|email/status": {
+      "guid": "7f830c3a4851f212e0402f8c2e34d4b8"
+    },
+    "query:email|POST|email/test": {
+      "guid": "90d64a57bcf3c905c83af9afb6a5c388"
+    },
+    "query:envelopes|GET|envelopes": {
+      "guid": "d4ff05ab31e0ffaadb1a5c51a53e3d8c"
+    },
+    "query:envelopes|GET|envelopes/stats": {
+      "guid": "a8eb895c2b4c6a886b8322df2968eff2"
+    },
+    "query:envelopes|GET|envelopes/{id}": {
+      "guid": "bb081b781a054a8fa4699418a7700dea"
+    },
+    "query:envelopes|GET|envelopes/{id}/prepare": {
+      "guid": "85664c84b82af5e0737ad4972960f41a"
+    },
+    "query:envelopes|PATCH|envelopes/{id}": {
+      "guid": "a58f0e2254877d5bb172c0d182440d57"
+    },
+    "query:envelopes|POST|app/hello": {
+      "guid": "1d00c808c5278926e9aa6129baccaf87"
+    },
+    "query:envelopes|POST|envelopes/{id}/extend": {
+      "guid": "7561f4600f2352f3c9d9191577b8674d"
+    },
+    "query:envelopes|POST|envelopes/{id}/recipients/{recipient_id}/correct": {
+      "guid": "27093369c552005c6d70904776e3f42e"
+    },
+    "query:envelopes|POST|envelopes/{id}/recipients/{recipient_id}/download_link": {
+      "guid": "c3ccb079930672d3cd3f128861e260ed"
+    },
+    "query:envelopes|POST|envelopes/{id}/recipients/{recipient_id}/host": {
+      "guid": "6efdc236d83e99c4847057f47212aef7"
+    },
+    "query:envelopes|POST|envelopes/{id}/recipients/{recipient_id}/link": {
+      "guid": "3938c124d4e4143029d884e86be4e59c"
+    },
+    "query:envelopes|POST|envelopes/{id}/recipients/{recipient_id}/remind": {
+      "guid": "e719466480861d22ae51458678eaa872"
+    },
+    "query:envelopes|POST|envelopes/{id}/send": {
+      "guid": "0aa4174f4c0c20c65a82a44c13d5c0c5"
+    },
+    "query:envelopes|POST|envelopes/{id}/sign": {
+      "guid": "0a936dd5d03363216686c1e0665e4bab"
+    },
+    "query:envelopes|POST|envelopes/{id}/void": {
+      "guid": "111ce0bdc28be0947ffc010d70fa2c29"
+    },
+    "query:envelopes|PUT|envelopes/{id}/fields": {
+      "guid": "64221352140fb2024aaca681bba7ccb8"
+    },
+    "query:envelopes|PUT|envelopes/{id}/recipients": {
+      "guid": "a04bbb9947953441a41f14bee5963e0e"
+    },
+    "query:final|POST|sign/final": {
+      "guid": "308beb5a0b081e430114e90910bf36e7"
+    },
+    "query:final|POST|sign/final/raw": {
+      "guid": "7f022dbe670f3bc063ec68ed34b90275"
+    },
+    "query:org|GET|org": {
+      "guid": "73ad7197a99e9f4d4e8d14b7e3b3ae35"
+    },
+    "query:org|GET|org/export": {
+      "guid": "c518a421f5cde0b327809691d59eafd0"
+    },
+    "query:org|PATCH|org": {
+      "guid": "029a29ed5374405cc345f021f65d0384"
+    },
+    "query:org|POST|members/{id}/remove": {
+      "guid": "d1fea477c9015c460748fa2a1444c8c9"
+    },
+    "query:org|POST|org/clear_demo": {
+      "guid": "925790322e8cb9bb1a7a2fddac60ffdd"
+    },
+    "query:org|POST|org/disclosure": {
+      "guid": "2f4312b7391b3561caa7a736b7c2170b"
+    },
+    "query:public|GET|public/{slug}": {
+      "guid": "e4d9bcf3cbde10b8f38eff9a1d658fbf"
+    },
+    "query:public|POST|public/{slug}/start": {
+      "guid": "64668ff7543ed79d185b370d61af3d69"
+    },
+    "query:public|POST|public/{slug}/verify": {
+      "guid": "bc767104fccabddb783ae4b97137edf1"
+    },
+    "query:rbac|GET|rbac/changes": {
+      "guid": "7089569b87fb73f3a57cd67a9c3d2625"
+    },
+    "query:rbac|GET|rbac/me": {
+      "guid": "5e438831b483a6067cfb5e8754543144"
+    },
+    "query:rbac|GET|rbac/members": {
+      "guid": "4a1904ed6c32f9c1a500f4ab875f8c04"
+    },
+    "query:rbac|POST|rbac/members/{id}/role": {
+      "guid": "5eda75ffcd0a58d4d355408111332420"
+    },
+    "query:seal|GET|seal/{envelope_id}/original": {
+      "guid": "5e75edeb83c0c34e8d12534f52861037"
+    },
+    "query:seal|POST|seal/{envelope_id}/final": {
+      "guid": "91861dd730758bfec25a8fed354ae068"
+    },
+    "query:signing|GET|signing/document": {
+      "guid": "16aef18979891ca80c670e57579ca0b6"
+    },
+    "query:signing|GET|signing/document/raw": {
+      "guid": "3c78b0d6ba678c0688c251336df678c3"
+    },
+    "query:signing|GET|signing/state": {
+      "guid": "9ad95c02264d0702dabfb9bac78ad1f8"
+    },
+    "query:signing|POST|signing/adopt": {
+      "guid": "853ee86d57cc4164b2067b5067895a5b"
+    },
+    "query:signing|POST|signing/decline": {
+      "guid": "3b869591c079e93d9b908f6996870de5"
+    },
+    "query:signing|POST|signing/fill": {
+      "guid": "db275d7ba3e3b824b4516596efadf2b8"
+    },
+    "query:signing|POST|signing/finish": {
+      "guid": "e0ca06ab2e966daad953e587f5c30793"
+    },
+    "query:sign|POST|sign/code": {
+      "guid": "a3d2fac6cb034db3581d415498e13354"
+    },
+    "query:sign|POST|sign/consent": {
+      "guid": "7f70e147053f6878dfb819631e0a8bde"
+    },
+    "query:sign|POST|sign/demo": {
+      "guid": "a7559fd46414c626a07c7c7630bed053"
+    },
+    "query:sign|POST|sign/identity": {
+      "guid": "0ed51974a312a4780a56700be1ae30d7"
+    },
+    "query:sign|POST|sign/open": {
+      "guid": "6d0adbae74c4993fc58b016b9e728c73"
+    },
+    "query:templates|DELETE|templates/{id}": {
+      "guid": "b7677f62d1c8c656f05a37c719b0f1c6"
+    },
+    "query:templates|GET|bulk/{id}": {
+      "guid": "b7c6969fa040fd3eaf11f754a236b7d3"
+    },
+    "query:templates|GET|templates": {
+      "guid": "7fcbfe05c60b1158db9e2d5b435b16e3"
+    },
+    "query:templates|GET|templates/{id}/public_problems": {
+      "guid": "770835e3976c089b8e748b145657248b"
+    },
+    "query:templates|POST|bulk/{id}/cancel": {
+      "guid": "0b783c4d23b2140a974975ce776da6d5"
+    },
+    "query:templates|POST|templates": {
+      "guid": "00c7d1a3fb511bebfc0d90db3a7c48f5"
+    },
+    "query:templates|POST|templates/{id}/bulk": {
+      "guid": "7a5f9f1eee6e37da6216ac0bfd284b0a"
+    },
+    "query:templates|POST|templates/{id}/public_link": {
+      "guid": "00d90f15328ee7f5b3e6f1bd522d092d"
+    },
+    "query:templates|POST|templates/{id}/use": {
+      "guid": "d0742de3e72dd04727c44145d1c3e242"
+    },
+    "query:verify|GET|brand": {
+      "guid": "b61eb93273d94879f73afd5e0619d81c"
+    },
+    "query:verify|POST|verify": {
+      "guid": "17794013c384501c4d554f980389dded"
+    },
+    "realtime_server:live": {
+      "guid": "5d1e4e55d5ae5c2dab1639895bf8abef",
+      "canonical": "live",
+      "canonical_source": "code"
+    },
+    "task:purge/daily": {
+      "guid": "bd2b7f9d0c59166a9c9af1f81df93fe7"
+    },
+    "task:sweep/every_minute": {
+      "guid": "1d690381fac469a9bff174a23ad8c8b7"
+    },
+    "tool:browse_templates": {
+      "guid": "4c4e4a73fd138ec7af8a0a3ff0598419"
+    },
+    "tool:check_approval": {
+      "guid": "e4c87b30ec8a77fd509a5629861f8879"
+    },
+    "tool:check_approval_signin": {
+      "guid": "39658920a99a071bd8f912ca653abfc6"
+    },
+    "tool:check_my_approval": {
+      "guid": "29a385ed242c53d469ebc4ff1f80b0d2"
+    },
+    "tool:download_link": {
+      "guid": "72de38e74a527b1392fbbe808b4caf3c"
+    },
+    "tool:download_link_signin": {
+      "guid": "f4d79b74314bf0d21490835f9b53a81f"
+    },
+    "tool:find_documents": {
+      "guid": "0d028a61155ac7c6efaddaffdc10b992"
+    },
+    "tool:get_envelope": {
+      "guid": "ccf866daf56fc4ad165c8791bf84fb54"
+    },
+    "tool:get_envelope_signin": {
+      "guid": "9c5e86b6ab7c2148d1311aca3b9bc108"
+    },
+    "tool:list_envelopes": {
+      "guid": "e3f2b9dc775ab86322fee41d6b1c23ed"
+    },
+    "tool:list_envelopes_signin": {
+      "guid": "954d4744f049988e06e02f0457b6f052"
+    },
+    "tool:list_templates": {
+      "guid": "508864062e8a9d07b28032217b592a81"
+    },
+    "tool:list_templates_signin": {
+      "guid": "a14e73453fc071240f89894db80e5602"
+    },
+    "tool:my_notifications": {
+      "guid": "9dc5c2921aeb1fafafb4fe584a1b4da2"
+    },
+    "tool:my_notifications_signin": {
+      "guid": "44e693d7c34482788c61fdd5fd134678"
+    },
+    "tool:read_document": {
+      "guid": "f430edac5c196debecac556bc410386b"
+    },
+    "tool:recent_activity": {
+      "guid": "b9b5b034a829491549a68e02ef0b2380"
+    },
+    "tool:remind": {
+      "guid": "548405e29a3ca75320f1aadbc5bf6854"
+    },
+    "tool:remind_signer": {
+      "guid": "d72e9f9fa5eb13f968f75b8ecae55021"
+    },
+    "tool:remind_signin": {
+      "guid": "2ede7dbab07046d8ed4fc27a1ec8e895"
+    },
+    "tool:request_role_change": {
+      "guid": "feb76843765378e34d08cb0d0ab39b12"
+    },
+    "tool:request_role_change_signin": {
+      "guid": "1ed0f6b4a92c30b2502b81b629de9b91"
+    },
+    "tool:send_from_template": {
+      "guid": "90844093d2e2a9508c11923ea4d2ad6f"
+    },
+    "tool:send_from_template_signin": {
+      "guid": "60342b2547e7dfc996024e8f3df9ea05"
+    },
+    "tool:unread_notifications": {
+      "guid": "38c8c46488f250ae5be77f463a2529d6"
+    },
+    "tool:void_envelope": {
+      "guid": "e4a2508808640af9bb9f4e0d2dc13b15"
+    },
+    "tool:void_envelope_signin": {
+      "guid": "171b8a9fc6f144908f1acc45ad107693"
+    },
+    "tool:whats_new": {
+      "guid": "918f0e856bba98c19c373ab75b366a83"
+    },
+    "tool:whats_new_signin": {
+      "guid": "5544f968b66cbdb1bffb89d667c86d7f"
+    },
+    "toolset:chatbot_agent": {
+      "guid": "2d7f6782dc621289c7663157d2df67c5",
+      "canonical": "T0x9fn6Q",
+      "canonical_source": "minted",
+      "type": "agent"
+    },
+    "toolset:countersign-mcp": {
+      "guid": "1ae8e0378f19d321af7d40134d469c5b",
+      "canonical": "countersign-mcp",
+      "canonical_source": "code"
+    },
+    "toolset:countersign-mcp-signin": {
+      "guid": "329469cd44b33d298a86ca0f63f2415f",
+      "canonical": "countersign-mcp-signin",
+      "canonical_source": "code"
+    },
+    "trigger:live/users_join": {
+      "guid": "b0163d66e034b508bda377fb9e0419dc"
+    },
+    "workflow_test:agent-access: a read key can't write": {
+      "guid": "eb7a23147e7296356470daab698c7a2c"
+    },
+    "workflow_test:agent-access: a sign-in gets one row, made on first use": {
+      "guid": "05c9d13e2b9feaae94505871844bf8d0"
+    },
+    "workflow_test:agent-access: keys are made within bounds": {
+      "guid": "01bd3d22a29d3d08b0735c33de7a544b"
+    },
+    "workflow_test:agent-access: revoked and expired keys stop at once": {
+      "guid": "45da1e38432aaacd956d184eb39094e0"
+    },
+    "workflow_test:approvals: \"change_role\" is decided by an admin, never the requester": {
+      "guid": "ab643e3fabd44686d2458f9ec9fec087"
+    },
+    "workflow_test:approvals: \"send_from_template\" is decided by the person the agent works for, once": {
+      "guid": "14cff17a953e614fd9621a0a2919c913"
+    },
+    "workflow_test:approvals: a request expires": {
+      "guid": "fee65bb28c09a07108e41bb31f5fd9d8"
+    },
+    "workflow_test:approvals: asking only records a request": {
+      "guid": "6a23cb302659c404226a30ef3e672f26"
+    },
+    "workflow_test:base: a notification reaches its person, never the person who caused it": {
+      "guid": "cea8c9f14b9ba04e874245f374fac173"
+    },
+    "workflow_test:base: a reset link works once, and an unknown link does nothing": {
+      "guid": "86ab72293f5f680d1ed6e75d51f499b9"
+    },
+    "workflow_test:base: an invite link signs a new person in, once": {
+      "guid": "3d8eb61f702070266b6336b6596d4417"
+    },
+    "workflow_test:developer: a failing delivery is retried later, and given up on after the last try": {
+      "guid": "bd9fa611c721b7bbaa24281e067e371b"
+    },
+    "workflow_test:developer: a removed member's API key is refused on its next call": {
+      "guid": "9dabc0d7f61d116d96e5d8ddfade6c69"
+    },
+    "workflow_test:developer: a webhook event goes once to each endpoint that wants it": {
+      "guid": "05f9f5aed331b6ba9fe38d0eff34d58e"
+    },
+    "workflow_test:developer: an API key acts as its maker, and stops when revoked": {
+      "guid": "81aa98a5fd662ea076ef5532c21c1ca7"
+    },
+    "workflow_test:documents: a 6 MB PDF is refused in table mode, naming the 5 MB limit": {
+      "guid": "b258dd4da8aee421083ec53ff464ba42"
+    },
+    "workflow_test:documents: a PDF is kept with the fingerprint of its stored bytes and each page read": {
+      "guid": "9a6d8049d7e8c1e75409c11b08774fbd"
+    },
+    "workflow_test:documents: a PNG named .pdf is refused by its bytes": {
+      "guid": "cafd1c02c37ec798f57ea7be6af65b17"
+    },
+    "workflow_test:documents: a damaged PDF is refused": {
+      "guid": "40444e3d2e2ba71ea9e2b61d31f36b77"
+    },
+    "workflow_test:documents: a retried upload with the same client id answers the same file": {
+      "guid": "470be5b086164e28d13a43c583475a24"
+    },
+    "workflow_test:documents: a viewer can't make a draft": {
+      "guid": "61de7529032b4c306eef742f92a75141"
+    },
+    "workflow_test:documents: an owner-password PDF is refused with a plain reason": {
+      "guid": "c589bf27f977762b0a749af2ba3f849e"
+    },
+    "workflow_test:documents: an upload makes a draft with a random public id, its pages and a created event": {
+      "guid": "4c3ed7c019ef4653cd25eefa41e0cfca"
+    },
+    "workflow_test:documents: the original comes back byte for byte, only to someone who can see it": {
+      "guid": "8746f5d7e0cd082749ede7938baaa2c7"
+    },
+    "workflow_test:documents: who can see an envelope": {
+      "guid": "44d8cce6455eaaf2660fd9901786a84c"
+    },
+    "workflow_test:draft: a field that runs off its page is refused": {
+      "guid": "c26294800391c61902e8e497b007f150"
+    },
+    "workflow_test:draft: a signer without a signature field blocks sending, by name": {
+      "guid": "a700f2aead4879e5c5edbf9096b492d2"
+    },
+    "workflow_test:draft: a viewer member can't prepare a document": {
+      "guid": "2c92b26be9356c14bce10ff5264c729c"
+    },
+    "workflow_test:draft: saving recipients replaces the list and drops the removed person's fields": {
+      "guid": "76995df9476850ec27e1251aee5ca798"
+    },
+    "workflow_test:email: a Resend webhook is believed only with a valid, recent signature": {
+      "guid": "19d2121d26fdbb8a38baee189a50dafe"
+    },
+    "workflow_test:email: a bounce marks the email, flags the recipient and tells the sender": {
+      "guid": "02f424baed27db501f4e6c34027887a9"
+    },
+    "workflow_test:email: a delivery event without a message id matches by address and send time": {
+      "guid": "6f33e7879800350f98bba60c17e26d5b"
+    },
+    "workflow_test:email: a refused send is retried with backoff, then failed after three attempts": {
+      "guid": "444daaaeedd6f8004e08abe34197d39c"
+    },
+    "workflow_test:email: an email stuck in sending becomes unknown and is never resent": {
+      "guid": "17563beca7b0d47631cfd5bbb2473b92"
+    },
+    "workflow_test:email: each reminder and each code is its own email": {
+      "guid": "b24bf3f68bf10c1897c8d00bf3752a1e"
+    },
+    "workflow_test:email: in demo mode only team members are emailed": {
+      "guid": "df916259cc4cccf354c7bb385d01353f"
+    },
+    "workflow_test:email: mail to a member deduplicates on member, kind and source": {
+      "guid": "2521881963e9f4b29d655a1ff7935139"
+    },
+    "workflow_test:email: names, titles and messages are escaped in the HTML": {
+      "guid": "e19e25cc850e3a54d5fc16fa5a830133"
+    },
+    "workflow_test:email: no outbox row holds a raw signing token or one-time code": {
+      "guid": "8c44f980940a73589c6a99b69de65fd1"
+    },
+    "workflow_test:email: status names the missing setting and never a value": {
+      "guid": "4bf8b6ba7242287beb646d802f2b39f7"
+    },
+    "workflow_test:email: the app's address is learned once, and only an admin changes it": {
+      "guid": "9c8712b0ebc07242d75b711b79fee908"
+    },
+    "workflow_test:email: the same invite queued twice is one row, and a sent row is never sent again": {
+      "guid": "f9a0ede55673fa6088bc4b797f8575a7"
+    },
+    "workflow_test:email: the test email reports the missing setting or Resend's exact error": {
+      "guid": "bf97397a3474d7d135ad03bfc7f7bea7"
+    },
+    "workflow_test:email: with no key, sending makes link-only rows and calls nothing": {
+      "guid": "101fdb4157ce1ef0ab8354f3c795c9f1"
+    },
+    "workflow_test:final: a party's download token opens the signed copy, and nothing once it's gone": {
+      "guid": "2bae0c16798a1d75621c190c3906370d"
+    },
+    "workflow_test:host: a member can't host signing on a document they can't see": {
+      "guid": "0d7f37179385f27f04026da34d161e55"
+    },
+    "workflow_test:host: in-person signing names the host on the recipient and the trail": {
+      "guid": "d49fb7bb16b27f933f9682a9a060735b"
+    },
+    "workflow_test:host: the sender signing their own document isn't emailed an invite; others still are": {
+      "guid": "480a32924702d8813d954a06b9db83d2"
+    },
+    "workflow_test:lifecycle: a completed envelope can't be voided": {
+      "guid": "c92213f6a412706298917a87b1fbebf4"
+    },
+    "workflow_test:lifecycle: a recipient opens, then signs, once": {
+      "guid": "2ae6cf21a38603c0fa55ca79cdc90ec9"
+    },
+    "workflow_test:lifecycle: an envelope moves draft, in progress, finishing, completed": {
+      "guid": "3563932dc6b9a1dd357368a8dafa2271"
+    },
+    "workflow_test:lifecycle: editing an audit row breaks the chain at that row": {
+      "guid": "47c267c847ca2ac6dbec569219fb4a8a"
+    },
+    "workflow_test:manage: a due reminder goes out once per interval, and never for demo envelopes": {
+      "guid": "de78b23bbdbc1df73324463d2b71593f"
+    },
+    "workflow_test:manage: an envelope past its deadline expires and its links stop working": {
+      "guid": "9ae77b0661ed3b13b9c00a4eb5e4a889"
+    },
+    "workflow_test:manage: correcting a recipient revokes their links and re-invites them at the new round": {
+      "guid": "d7b9be5dc36be23e455385c2a6f75aa0"
+    },
+    "workflow_test:manage: voiding ends the envelope and tells whoever had heard; a completed one can't be voided": {
+      "guid": "429d1e76f6cd76822318460a90d1b7a8"
+    },
+    "workflow_test:rbac: a demoted manager loses the power at once": {
+      "guid": "dd96cc50ef2bdceb8609b8a2e82a73e8"
+    },
+    "workflow_test:rbac: a manager changes a role, and it is recorded": {
+      "guid": "1b269a06f3984425f98dc5828c6ea5c5"
+    },
+    "workflow_test:rbac: a member can't change roles": {
+      "guid": "d58dc0141170a2ef366cd4b093ee5805"
+    },
+    "workflow_test:rbac: nobody changes their own role, or a missing person's": {
+      "guid": "33d7562332050eb849c3c2b3bec0e83e"
+    },
+    "workflow_test:seal: Retry clears the flag for the sender or an admin, and no one else": {
+      "guid": "9ae17c338882e59fa48b14f77e3c4cb3"
+    },
+    "workflow_test:seal: a failed attempt backs off; the fifth flags it, notes it on the trail and tells the sender": {
+      "guid": "184457254a8129e9fdf1f18471b302aa"
+    },
+    "workflow_test:seal: a run already holding the envelope makes another answer busy, until its lease lapses": {
+      "guid": "79f8a4609e72cf32dfeb00cd5c1781a5"
+    },
+    "workflow_test:seal: a second run on a completed envelope does nothing": {
+      "guid": "6f24e9f02bf921e779f9f9fff6de0557"
+    },
+    "workflow_test:seal: the audit trail renders as its own PDF": {
+      "guid": "3819a075d7331426cc28bce4e644469c"
+    },
+    "workflow_test:seal: the internal routes answer only the envelope's current seal key": {
+      "guid": "b3a8f8dff0d29754942352a98d21c169"
+    },
+    "workflow_test:seal: the sweep runs only envelopes that are sealing, due and not flagged": {
+      "guid": "b81a307caea22ee56fa0a6f64f79e99d"
+    },
+    "workflow_test:settings: an admin changes them; a member can't": {
+      "guid": "c2fff39f35298248780361cfa383c7c0"
+    },
+    "workflow_test:settings: clearing demo data removes demo documents and leaves real ones": {
+      "guid": "35dcbb90495e39b65a36580c222e76a1"
+    },
+    "workflow_test:settings: editing the disclosure publishes a new version": {
+      "guid": "81828f4ca38f1fed8526227577435129"
+    },
+    "workflow_test:settings: removing someone ends their access and keys, and keeps their documents": {
+      "guid": "16361c88d62357d7d16ec91a3bad2ec5"
+    },
+    "workflow_test:settings: retention erases an old completed document and leaves a tombstone; recent ones stay": {
+      "guid": "cd3b698a209efaeefa2f27a19562eaf2"
+    },
+    "workflow_test:templates: a bulk send sends each good row once, and keeps bad rows as failed with a reason": {
+      "guid": "6dc3cab3f3dc2e298879ae4aabb9aaac"
+    },
+    "workflow_test:templates: a fourth code for the same address within the hour is refused, even from another IP": {
+      "guid": "9aaf7abccbbd2c3f7fe3f2f0d249c3e2"
+    },
+    "workflow_test:templates: a public link that's off says so, and works again when turned back on": {
+      "guid": "0deb9ad5729dd703704d1e3f31716229"
+    },
+    "workflow_test:templates: a public visitor without the right code gets no document and no signing link": {
+      "guid": "f39bbe6d55fd900b10615dd987dbb2c3"
+    },
+    "workflow_test:templates: using a template puts each field with the right person, and a repeat makes nothing new": {
+      "guid": "48c4a0955f6d8f8f72155d1e01d225c9"
+    },
+    "workflow_test:verify: a fingerprint matches, with names only alongside the same envelope's public id": {
+      "guid": "46df667f39beffa114405f3ef3295ad3"
+    },
+    "workflow_test:verify: more than 30 checks a minute from one address are turned away": {
+      "guid": "871936bbc4dafc92071aa2d5f3c377f0"
+    }
+  }
+}

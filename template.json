@@ -1,0 +1,287 @@
+{
+  "name": "Countersign",
+  "description": "Send documents for signature, sign them anywhere, and keep a copy anyone can check: templates, bulk send, public links, a REST API, webhooks and MCP tools.",
+  "preview": "docs/screenshot-light.png",
+  "track": "starter",
+  "signature": "document",
+  "screens": [
+    {
+      "name": "Documents",
+      "path": "/"
+    },
+    {
+      "name": "New document",
+      "path": "/documents/new"
+    },
+    {
+      "name": "Prepare",
+      "path": "/documents/:id/prepare"
+    },
+    {
+      "name": "Document",
+      "path": "/documents/:id"
+    },
+    {
+      "name": "View",
+      "path": "/documents/:id/view"
+    },
+    {
+      "name": "Templates",
+      "path": "/templates"
+    },
+    {
+      "name": "Send to many",
+      "path": "/templates/:id/bulk"
+    },
+    {
+      "name": "Bulk send",
+      "path": "/bulk/:id"
+    },
+    {
+      "name": "Developers",
+      "path": "/developer"
+    },
+    {
+      "name": "Organisation",
+      "path": "/settings/organisation"
+    },
+    {
+      "name": "Sign",
+      "path": "/sign/:token"
+    },
+    {
+      "name": "Signed copy",
+      "path": "/signed/:token"
+    },
+    {
+      "name": "Verify",
+      "path": "/verify"
+    },
+    {
+      "name": "Public link",
+      "path": "/p/:slug"
+    }
+  ],
+  "roles": [
+    "admin",
+    "member",
+    "viewer"
+  ],
+  "permissions": [
+    "envelope.send",
+    "envelope.read_team",
+    "envelope.read_all",
+    "template.manage",
+    "settings.manage",
+    "developer.manage",
+    "team.manage"
+  ],
+  "agentTools": [
+    "list_envelopes",
+    "get_envelope",
+    "list_templates",
+    "send_from_template",
+    "void_envelope",
+    "remind",
+    "download_link",
+    "whats_new",
+    "my_notifications",
+    "request_role_change",
+    "check_approval"
+  ],
+  "assistantTools": [
+    "find_documents",
+    "read_document",
+    "browse_templates",
+    "remind_signer",
+    "recent_activity",
+    "unread_notifications",
+    "check_my_approval"
+  ],
+  "approvals": [
+    "send_from_template",
+    "void_envelope",
+    "change_role"
+  ],
+  "live": [
+    "envelope",
+    "bulk_send",
+    "api_key",
+    "webhook",
+    "org_setting",
+    "disclosure",
+    "user"
+  ],
+  "notifications": [
+    "approval",
+    "approval_decided"
+  ],
+  "audit": {
+    "liveWriteExempt": [
+      {
+        "table": "rate_bucket",
+        "reason": "Rate-limit counters, written on public calls many times a minute; no screen shows them."
+      },
+      {
+        "table": "otp_code",
+        "reason": "One-time codes, stored hashed and read only by the server to check what a signer types; no screen shows them."
+      },
+      {
+        "table": "signing_link",
+        "reason": "Signing-link fingerprints, read only by the server; the trail records each link made, and the document's page reloads on the change that follows."
+      },
+      {
+        "table": "audit_event",
+        "reason": "The audit trail is written by every step on a document, alongside the change that step announces; announcing each event too would double every frame."
+      },
+      {
+        "table": "webhook_delivery",
+        "reason": "Delivery attempts, written by every event and every retry; the Developers page reads them when it opens and after its own actions."
+      },
+      {
+        "table": "api_key_use",
+        "reason": "An append-only log of API calls, one per call, so reads never write; the key list reads the latest when it opens."
+      },
+      {
+        "table": "document_blob",
+        "reason": "A stored file's bytes, written by uploads and the seal; the envelope change that follows announces it."
+      },
+      {
+        "table": "document_file",
+        "reason": "A stored file's row, written by uploads and the seal; the envelope change that follows announces it."
+      },
+      {
+        "table": "org_setting",
+        "reason": "Apart from Settings (which announces its saves), only the app's own address is written here, learned quietly from requests; no screen shows it."
+      },
+      {
+        "table": "field",
+        "reason": "A signer filling their fields, keystroke by keystroke through their session; the sender's page is told after each save by an ids-only change on the envelope."
+      },
+      {
+        "table": "signature",
+        "reason": "A signer's adopted mark; the envelope change that follows it announces it, and only the signer's own page shows it before they finish."
+      }
+    ]
+  },
+  "qa": {
+    "maxLinks": 100,
+    "workspace": {
+      "checks": [
+        {
+          "gate": "sign flow",
+          "run": [
+            "frontend/scripts/sign-flow-check.mjs",
+            "--backend",
+            "{backend}",
+            "--app",
+            "{frontend}"
+          ]
+        },
+        {
+          "gate": "keyboard signing",
+          "run": [
+            "frontend/scripts/keyboard-sign-check.mjs",
+            "--backend",
+            "{backend}",
+            "--frontend",
+            "{frontend}"
+          ]
+        },
+        {
+          "gate": "uploads",
+          "run": [
+            "frontend/scripts/upload-check.mjs",
+            "--backend",
+            "{backend}"
+          ]
+        },
+        {
+          "gate": "templates",
+          "run": [
+            "frontend/scripts/templates-check.mjs",
+            "--backend",
+            "{backend}",
+            "--frontend",
+            "{frontend}"
+          ]
+        },
+        {
+          "gate": "developer",
+          "run": [
+            "frontend/scripts/developer-check.mjs",
+            "--backend",
+            "{backend}"
+          ]
+        },
+        {
+          "gate": "mcp tools",
+          "run": [
+            "frontend/scripts/mcp-check.mjs",
+            "--backend",
+            "{backend}"
+          ]
+        }
+      ]
+    }
+  },
+  "review": {
+    "bar": 4.5,
+    "floor": 4,
+    "runs": 4,
+    "views": [
+      {
+        "name": "documents",
+        "bar": 4.75
+      },
+      {
+        "name": "prepare",
+        "bar": 4.75
+      },
+      {
+        "name": "sign",
+        "bar": 4.75
+      },
+      {
+        "name": "document",
+        "bar": 4.5
+      },
+      {
+        "name": "templates",
+        "bar": 4.5
+      }
+    ],
+    "capture": [
+      {
+        "name": "documents",
+        "view": "documents",
+        "path": "/",
+        "actions": [
+          {
+            "wait": "[data-kit='stat-card']"
+          }
+        ]
+      },
+      {
+        "name": "document",
+        "view": "document",
+        "path": "/documents/3",
+        "actions": [
+          {
+            "wait": "h1"
+          }
+        ]
+      },
+      {
+        "name": "templates",
+        "view": "templates",
+        "path": "/templates",
+        "actions": [
+          {
+            "wait": "h1"
+          }
+        ]
+      }
+    ]
+  }
+}

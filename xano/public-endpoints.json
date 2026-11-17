@@ -1,0 +1,17 @@
+[
+  { "name": "sign/open", "reason": "A recipient opens their emailed signing link with no account: the link's random token (stored only as a hash) is their credential. Records the first open on the trail, rate-limited per IP and per link, and mints a 30-minute signer session for the recipient table only, after identity and consent." },
+  { "name": "sign/code", "reason": "Emails a recipient a one-time code for the identity check. Only for a valid link token; limited to three codes per recipient per hour." },
+  { "name": "sign/identity", "reason": "Checks a recipient's access code or emailed code for a valid link token. Limited per recipient and per IP; counts tries and records the result on the trail." },
+  { "name": "sign/consent", "reason": "A recipient agrees to sign electronically, for a valid link token after identity. Records the disclosure version on the trail and mints their signer session (recipient table, kind signer, round-bound)." },
+  { "name": "sign/demo", "reason": "In demo mode only: opens the seeded demo signer's page so a visitor sees what a recipient sees. Refuses unless demo mode is on and the seeded recipient still exists; mints a link for that one demo recipient." },
+  { "name": "sign/final", "reason": "A party's personal download link for the signed copy (a random token, stored hashed): answers the copy's details. Rate-limited per IP." },
+  { "name": "sign/final/raw", "reason": "Streams the signed copy for a party's personal download link (random token, stored hashed), when files are kept in the database. Rate-limited per IP." },
+  { "name": "verify", "reason": "Anyone checks whether a PDF's fingerprint matches a completed document: only the SHA-256 is sent, never the file. Rate-limited per IP; names signers only with the document ID from the PDF." },
+  { "name": "brand", "reason": "The organisation's name and logo, shown on the public signing, download and verify pages before anyone has a session." },
+  { "name": "public/{slug}", "reason": "What a template's public link shows before the visitor gives their email: the organisation, title and their role. Only for a link that exists and is turned on." },
+  { "name": "public/{slug}/start", "reason": "A public-link visitor asks for a one-time code to prove their email. Limited to three codes per address per hour from anywhere, and per IP; nothing else is made until the code is right." },
+  { "name": "public/{slug}/verify", "reason": "A public-link visitor's code is checked; only then is their copy of the template made and sent, and their own signing link returned. Limited per link and address; a retry with the same code answers the same copy." },
+  { "name": "seal/{envelope_id}/original", "reason": "The seal's background lambda reads the document it's sealing over the app's own API: allowed only with that envelope's one-time seal key, stored hashed and cleared when the seal ends." },
+  { "name": "seal/{envelope_id}/final", "reason": "The seal's background lambda stores the signed copy it made over the app's own API: allowed only with that envelope's one-time seal key, stored hashed and cleared when the seal ends." },
+  { "name": "resend", "reason": "Resend's delivery webhook (delivered, bounced, complained). Every request's Svix signature is checked against RESEND_WEBHOOK_SECRET before anything is read or written; without the secret it is refused." }
+]

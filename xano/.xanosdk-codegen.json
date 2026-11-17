@@ -1,0 +1,52 @@
+{
+  "source": "file",
+  "origin": "/var/folders/0n/jvfbdf6123v9_w9sdnvq8jy40000gn/T/tmp.uBNTjrfJ2r/bundle.json",
+  "sdkVersion": "1.0.21",
+  "generatedAt": "2026-11-16T23:00:39.557Z",
+  "note": "Written by `xanosdk generate`. Its presence lets a later `pull`, `generate --force` or `init --from` refresh this tree in place.",
+  "report": {
+    "headline": "",
+    "total": 0,
+    "bySeverity": {
+      "error": 0,
+      "warning": 0,
+      "notice": 0
+    },
+    "byAudience": {
+      "workspace": 0,
+      "modelling": 0,
+      "informational": 0
+    },
+    "findings": []
+  },
+  "files": [
+    "_shared.ts",
+    ".env.example",
+    "index.ts",
+    "query/authentication.ts",
+    "query/authentication/auth_login_POST.ts",
+    "query/authentication/auth_me_GET.ts",
+    "query/authentication/auth_signup_POST.ts",
+    "README.md",
+    "routes.gen.ts",
+    "table/account.ts",
+    "table/event_log.ts",
+    "table/user.ts",
+    "workspace.ts"
+  ],
+  "digests": {
+    "_shared.ts": "fe32c9cd5c9f265da2aaa9198273e46e",
+    ".env.example": "96159242ea3aa3bba6163e2f4ab81ef5",
+    "index.ts": "71a40aeb92c4af4b12f1f569159e745c",
+    "query/authentication.ts": "9ba600e0df965f08f862acb761dd3794",
+    "query/authentication/auth_login_POST.ts": "585b89ab148bdd0c6e8b5f80b8252aae",
+    "query/authentication/auth_me_GET.ts": "936579266d614b01eec32248683bad23",
+    "query/authentication/auth_signup_POST.ts": "5b9b701103a60e6e264b6ac7b6bd2a94",
+    "README.md": "96cbe88c3ab003da38d73383a67f9259",
+    "routes.gen.ts": "7cd36b8d00cb6b81b88a4e11e5d7d8fc",
+    "table/account.ts": "0bd484364ae4ad2708b5a7876825e95b",
+    "table/event_log.ts": "25c83a12f786d33383a7f6a80e95f309",
+    "table/user.ts": "8ae36f5474282e698f9697fee1b8af55",
+    "workspace.ts": "dadc98bd9aeb61e484b1817a1a638d0e"
+  }
+}

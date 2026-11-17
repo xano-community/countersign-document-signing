@@ -1,0 +1,119 @@
+/* The kit's tokens and global rules (CRAFT.md §16). Imported once, right after `@import "tailwindcss"`; the colours
+   themselves are theme.css, generated and contrast-checked by modules/kit/theme/build-theme.mjs. */
+@theme inline {
+  /* Accent-coloured TEXT (today, the active tab, a link): never `text-primary`, which is the button fill and too
+     dark to read on a dark surface. --primary-text is tuned per theme to pass 4.5:1 on every surface. */
+  --color-primary-text: var(--primary-text);
+  /* The selected row / the record open beside the list: visible next to a hover (bg-muted/50), never a status. */
+  --color-selected: var(--selected);
+  /* The edge of a small control a person must find: a checkbox, a radio (3:1, where an input's border is 1.7:1). */
+  --color-control: var(--control);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-info: var(--info);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  /* Motion: one curve, three durations (CRAFT.md §15.11). Hover/press = fast, popovers/menus = base, sheets = slow. */
+  --ease-out: cubic-bezier(0.2, 0, 0, 1);
+  --default-transition-duration: 120ms;
+  --default-transition-timing-function: var(--ease-out);
+  --animate-duration-base: 160ms;
+  --animate-duration-slow: 220ms;
+}
+
+/* Type: six roles, one size each (CRAFT.md §8). Use the role, never a size: `text-title`, not `text-lg font-semibold`
+   or `text-[1.125rem]`. Weight and tracking come with the role; 400 / 500 / 600 are the only weights. */
+@theme {
+  /* Tailwind's own scale, aligned to the roles, so shadcn's primitives and any added later land on them too:
+     text-sm IS the body size (13 px), text-xs the caption, text-lg the title. */
+  --text-sm: 0.8125rem;
+  --text-sm--line-height: 1.25rem;
+  --text-metric: 1.5rem;          /* a key number on a stat card */
+  --text-metric--line-height: 2rem;
+  --text-metric--font-weight: 600;
+  --text-metric--letter-spacing: -0.02em;
+  --text-title: 1.125rem;         /* the page title, a sheet's / dialog's title */
+  --text-title--line-height: 1.5rem;
+  --text-title--font-weight: 600;
+  --text-title--letter-spacing: -0.012em;
+  --text-heading: 0.875rem;       /* a card's / section's / column's title */
+  --text-heading--line-height: 1.25rem;
+  --text-heading--font-weight: 600;
+  --text-heading--letter-spacing: -0.006em;
+  --text-body: 0.8125rem;         /* everything else: cells, controls, labels, menus, body copy */
+  --text-body--line-height: 1.25rem;
+  --text-caption: 0.75rem;        /* secondary lines, column headers, hints, badges, timestamps */
+  --text-caption--line-height: 1rem;
+  --text-micro: 0.6875rem;        /* a count in a pill, a kbd: never a sentence */
+  --text-micro--line-height: 1rem;
+}
+
+/* One focus ring, everywhere: 2 px of the accent, 2 px off the edge. `focus-ring-inset` for rows and cells, where
+   an outer ring would be clipped by the table. Never a ring on mouse click (focus-visible only). */
+@utility focus-ring {
+  &:focus-visible { outline: 2px solid var(--ring); outline-offset: 2px; }
+}
+@utility focus-ring-inset {
+  &:focus-visible { outline: 2px solid var(--ring); outline-offset: -2px; }
+}
+
+/* A safety net: `text-primary` on a dark surface would be the button fill (too dark to read); show the text tone. */
+.dark .text-primary { color: var(--primary-text); }
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-optical-sizing: auto;
+  }
+  /* Numbers that line up: every table, every counter. */
+  table, [data-slot="badge"], [data-slot="status-badge"], kbd { font-variant-numeric: tabular-nums; }
+  ::selection { background: color-mix(in oklch, var(--primary) 22%, transparent); }
+}
+
+/* Phone: every control is at least 40 px tall (CRAFT.md §15.3). */
+@media (max-width: 639px) {
+  [data-slot="button"], [data-variant][data-size], [data-slot="select-trigger"], [data-slot="input"] {
+    min-height: 2.5rem;
+  }
+  /* Icon-only buttons (the menu trigger, the theme toggle) are square: give them the width too. */
+  [data-size^="icon"], [data-slot="sidebar-trigger"] { min-width: 2.5rem; min-height: 2.5rem; }
+}
+
+/* The phone tab bar owns the bottom of the screen: lift floating launchers (@xano-sdk/chatbot's) above it. */
+@media (max-width: 767px) {
+  :root:has([data-kit="bottom-nav"]) { --chat-offset: 3.75rem; }
+}
+
+/* The assistant docked down the side (@xano-sdk/chatbot's ChatWidget): the page makes room beside it. */
+@media (min-width: 640px) {
+  html[data-chat-dock="right"] body { padding-right: var(--chat-dock); }
+  html[data-chat-dock="left"] body { padding-left: var(--chat-dock); }
+}
+
+/* A floating chat launcher never covers the end of a page. */
+:root:has([data-testid="chat-widget-launcher"]) [data-kit="scroll-pane"] > div { padding-bottom: 6rem; }
+
+/* A modal (a sheet, a dialog) turns pointer events off outside itself; its toasts' Undo must stay clickable. */
+[data-sonner-toaster] { pointer-events: auto; }
+
+/* A horizontal strip that scrolls instead of wrapping (status tabs, kanban on a phone). */
+.kit-scroll-x {
+  overflow-x: auto;
+  scrollbar-width: none;
+  overscroll-behavior-x: contain;
+}
+.kit-scroll-x::-webkit-scrollbar { display: none; }
+
+/* Respect reduced motion everywhere (CRAFT.md §15.11). */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
